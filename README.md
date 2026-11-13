@@ -2,7 +2,7 @@
 
 ## Website
 - `index.html` is a responsive, single-page agency website.
-- The enquiry form opens the visitor's email app and drafts a message to `brownkrm574@gmail.com`.
+- The enquiry form opens the visitor's email app and drafts a message to rayhanadenuga0-create`.
 - It does not collect or store form data on a server.
 - Replace any contact details if the business later uses a dedicated inbox.
 
