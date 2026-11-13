@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PixelHarbor Studio | Digital, Built to Move</title>
+<style>
+:root {
+  --bg: #07111f;
+  --panel: #101f32;
+  --cyan: #20d9e8;
+  --white: #f4f8ff;
+  --muted: #a7b5c8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #20344b;
+}
+.logo { font-size: 22px; font-weight: bold; }
+.logo span { color: var(--cyan); }
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+nav a:hover { color: var(--cyan); }
+.hero {
+  padding: 110px 8% 100px;
+  text-align: center;
+  background: radial-gradient(ellipse at top, #12344b, var(--bg) 70%);
+}
+.tag {
+  color: var(--cyan);
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.1;
+  margin: 22px 0;
+}
+h1 span { color: var(--cyan); }
+.hero p {
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+.btn {
+  display: inline-block;
+  background: var(--cyan);
+  color: #06111e;
+  padding: 14px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 6px;
+}
+.btn.outline {
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+}
+section { padding: 75px 8%; }
+.section-title { text-align: center; margin-bottom: 40px; }
+.section-title h2 { font-size: 34px; }
+.section-title p { color: var(--muted); }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #203c54;
+  border-radius: 13px;
+  padding: 27px;
+}
+.card h3 { color: var(--cyan); margin-bottom: 12px; }
+.card p { color: var(--muted); font-size: 14px; }
+.price { font-size: 24px; font-weight: bold; margin-top: 17px; }
+.price small { font-size: 13px; color: var(--muted); }
+.process {
+  background: #0b1929;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.step {
+  padding: 22px;
+  background: var(--panel);
+  border-radius: 12px;
+}
+.step strong { color: var(--cyan); font-size: 25px; }
+.step p { color: var(--muted); font-size: 14px; }
+.contact { text-align: center; }
+.contact p { color: var(--muted); margin: 15px auto 25px; }
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  border-top: 1px solid #20344b;
+  font-size: 13px;
+}
+@media(max-width:650px) {
+  header { flex-direction: column; gap: 15px; }
+  nav a { margin: 0 7px; }
+  .hero { padding: 75px 6%; }
+  section { padding: 60px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Pixel<span>Harbor</span> Studio</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">WELCOME TO PIXELHARBOR STUDIO</div>
+  <h1>Digital, <span>built to move.</span></h1>
+  <p>We help businesses grow with modern websites, AI-powered solutions and creative digital content. Big ideas deserve great digital experiences.</p>
+  <a class="btn" href="#contact">Start a project</a>
+  <a class="btn outline" href="#services">Explore services</a>
+</div>
+
+<section id="services">
+  <div class="section-title">
+    <h2>What We Do</h2>
+    <p>Creative digital services for ambitious businesses.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>01 / Web Studio</h3>
+      <p>Modern, mobile-friendly websites, landing pages and simple online storefronts.</p>
+    </div>
+    <div class="card">
+      <h3>02 / AI Studio</h3>
+      <p>AI assistants, FAQ chatbots and workflow automation solutions.</p>
+    </div>
+    <div class="card">
+      <h3>03 / Creative Studio</h3>
+      <p>Logo concepts, brand kits, social media graphics and promotional designs.</p>
+    </div>
+    <div class="card">
+      <h3>04 / Growth Studio</h3>
+      <p>Social content calendars, marketing materials and campaign creative.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="section-title">
+    <h2>Simple Starting Prices</h2>
+    <p>Clear starting points. Final quotes depend on project scope.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Creative Design</h3>
+      <p>Designs for your brand and business.</p>
+      <div class="price">From £25</div>
+    </div>
+    <div class="card">
+      <h3>Social Content</h3>
+      <p>A batch of social media content.</p>
+      <div class="price">From £35</div>
+    </div>
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>A professionally designed single-page website.</p>
+      <div class="price">From £65</div>
+    </div>
+    <div class="card">
+      <h3>AI Solutions</h3>
+      <p>Chatbots and automation tailored to your needs.</p>
+      <div class="price">Custom quote</div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="section-title">
+    <h2>How It Works</h2>
+    <p>From your idea to a finished digital project.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><strong>01</strong><h3>Tell Us</h3><p>Share your idea and goals.</p></div>
+    <div class="step"><strong>02</strong><h3>We Plan</h3><p>Agree on the scope and price.</p></div>
+    <div class="step"><strong>03</strong><h3>We Create</h3><p>Build and refine your project.</p></div>
+    <div class="step"><strong>04</strong><h3>Launch</h3><p>Deliver your finished work.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>Let's Build Something.</h2>
+    <p>Have a project in mind? We'd love to hear about it.</p>
+  </div>
+  <p>Contact PixelHarbor Studio to discuss your next project.</p>
+  <a class="btn" href="mailto:rayhanadenga0@gmail.com?subject=PixelHarbor%20Studio%20Project%20Enquiry">Email Us</a>
+</section>
+
+<footer>
+  © 2026 PixelHarbor Studio. Digital, built to move.
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PixelHarbor Studio | Digital, Built to Move</title>
+<style>
+:root {
+  --bg: #07111f;
+  --panel: #101f32;
+  --cyan: #20d9e8;
+  --white: #f4f8ff;
+  --muted: #a7b5c8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #20344b;
+}
+.logo { font-size: 22px; font-weight: bold; }
+.logo span { color: var(--cyan); }
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+nav a:hover { color: var(--cyan); }
+.hero {
+  padding: 110px 8% 100px;
+  text-align: center;
+  background: radial-gradient(ellipse at top, #12344b, var(--bg) 70%);
+}
+.tag {
+  color: var(--cyan);
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.1;
+  margin: 22px 0;
+}
+h1 span { color: var(--cyan); }
+.hero p {
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+.btn {
+  display: inline-block;
+  background: var(--cyan);
+  color: #06111e;
+  padding: 14px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 6px;
+}
+.btn.outline {
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+}
+section { padding: 75px 8%; }
+.section-title { text-align: center; margin-bottom: 40px; }
+.section-title h2 { font-size: 34px; }
+.section-title p { color: var(--muted); }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #203c54;
+  border-radius: 13px;
+  padding: 27px;
+}
+.card h3 { color: var(--cyan); margin-bottom: 12px; }
+.card p { color: var(--muted); font-size: 14px; }
+.price { font-size: 24px; font-weight: bold; margin-top: 17px; }
+.price small { font-size: 13px; color: var(--muted); }
+.process {
+  background: #0b1929;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.step {
+  padding: 22px;
+  background: var(--panel);
+  border-radius: 12px;
+}
+.step strong { color: var(--cyan); font-size: 25px; }
+.step p { color: var(--muted); font-size: 14px; }
+.contact { text-align: center; }
+.contact p { color: var(--muted); margin: 15px auto 25px; }
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  border-top: 1px solid #20344b;
+  font-size: 13px;
+}
+@media(max-width:650px) {
+  header { flex-direction: column; gap: 15px; }
+  nav a { margin: 0 7px; }
+  .hero { padding: 75px 6%; }
+  section { padding: 60px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Pixel<span>Harbor</span> Studio</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">WELCOME TO PIXELHARBOR STUDIO</div>
+  <h1>Digital, <span>built to move.</span></h1>
+  <p>We help businesses grow with modern websites, AI-powered solutions and creative digital content. Big ideas deserve great digital experiences.</p>
+  <a class="btn" href="#contact">Start a project</a>
+  <a class="btn outline" href="#services">Explore services</a>
+</div>
+
+<section id="services">
+  <div class="section-title">
+    <h2>What We Do</h2>
+    <p>Creative digital services for ambitious businesses.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>01 / Web Studio</h3>
+      <p>Modern, mobile-friendly websites, landing pages and simple online storefronts.</p>
+    </div>
+    <div class="card">
+      <h3>02 / AI Studio</h3>
+      <p>AI assistants, FAQ chatbots and workflow automation solutions.</p>
+    </div>
+    <div class="card">
+      <h3>03 / Creative Studio</h3>
+      <p>Logo concepts, brand kits, social media graphics and promotional designs.</p>
+    </div>
+    <div class="card">
+      <h3>04 / Growth Studio</h3>
+      <p>Social content calendars, marketing materials and campaign creative.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="section-title">
+    <h2>Simple Starting Prices</h2>
+    <p>Clear starting points. Final quotes depend on project scope.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Creative Design</h3>
+      <p>Designs for your brand and business.</p>
+      <div class="price">From £25</div>
+    </div>
+    <div class="card">
+      <h3>Social Content</h3>
+      <p>A batch of social media content.</p>
+      <div class="price">From £35</div>
+    </div>
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>A professionally designed single-page website.</p>
+      <div class="price">From £65</div>
+    </div>
+    <div class="card">
+      <h3>AI Solutions</h3>
+      <p>Chatbots and automation tailored to your needs.</p>
+      <div class="price">Custom quote</div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="section-title">
+    <h2>How It Works</h2>
+    <p>From your idea to a finished digital project.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><strong>01</strong><h3>Tell Us</h3><p>Share your idea and goals.</p></div>
+    <div class="step"><strong>02</strong><h3>We Plan</h3><p>Agree on the scope and price.</p></div>
+    <div class="step"><strong>03</strong><h3>We Create</h3><p>Build and refine your project.</p></div>
+    <div class="step"><strong>04</strong><h3>Launch</h3><p>Deliver your finished work.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>Let's Build Something.</h2>
+    <p>Have a project in mind? We'd love to hear about it.</p>
+  </div>
+  <p>Contact PixelHarbor Studio to discuss your next project.</p>
+  <a class="btn" href="mailto:rayhanadenga0@gmail.com?subject=PixelHarbor%20Studio%20Project%20Enquiry">Email Us</a>
+</section>
+
+<footer>
+  © 2026 PixelHarbor Studio. Digital, built to move.
+</footer>
+
+</body>
+</html>
