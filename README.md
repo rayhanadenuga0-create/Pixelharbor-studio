@@ -4,7 +4,7 @@
 - `index.html` is a responsive, single-page agency website.
 - The enquiry form opens the visitor's email app and drafts a message to rayhanadenuga0-create`.
 - It does not collect or store form data on a server.
-- Replace any contact details if the business later uses a dedicated inbox.
+- Replace any contact details if 
 
 ## Brand and positioning
 PixelHarbor Studio is an independent digital studio serving small businesses, creators and founders in the UK, Egypt and worldwide.
